@@ -9,12 +9,12 @@ Interrupts implementation momentum to evaluate whether you're solving the right 
 
 ---
 
-## Hard rules for 4.7 systems work
+## Hard rules: evidence before design conclusions
 
-4.7 defaults to reasoning over tool calls — that produces confident-wrong answers, hallucinated columns, fabricated counts, and decisions from theory not code. Root CLAUDE.md "Evidence Before Diagnosis" defines the full protocol. Systems-work additions:
+Left to itself, a model reasons where it should measure — and reasoning produces confident-wrong answers, hallucinated columns, fabricated counts, and decisions from theory instead of code. The base rule: never state a load-bearing claim (one that makes the next decision wrong if it is wrong) without running the tool call that proves it, this session. Systems-work additions:
 
 - **Every load-bearing claim in this protocol MUST come from a tool call this session.** Concept counts, caller counts, exception counts, column semantics, phase timing — all require a tool call, not recall.
-- **Parallelize with subagents.** 4.7 fans out fewer by default. When the protocol needs counts across modules, spawn an Agent to gather them in parallel instead of serializing into reasoning.
+- **Parallelize with subagents.** When the protocol needs counts across modules, spawn an agent to gather them in parallel instead of serializing into reasoning.
 - **Stop mid-sentence when theorizing.** "The real problem is X" / "this is almost certainly Y" → delete, measure, write what the measurement showed.
 
 ---
@@ -142,7 +142,7 @@ Any one is a reason to pause:
 - `if/else` chain where each branch handles a "type" of the same operation
 - Fix that requires understanding why 2+ previous fixes were necessary
 - `setTimeout` / delays for rendering or state timing
-- Writing a design conclusion without a tool call from this session backing it — the single most common way design reviews fail on 4.7
+- Writing a design conclusion without a tool call from this session backing it — the single most common way design reviews fail
 
 ---
 
