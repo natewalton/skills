@@ -9,9 +9,40 @@ Interrupts implementation momentum to evaluate whether you're solving the right 
 
 ---
 
-## Hard rules: evidence before design conclusions
+## Evidence before diagnosis
 
-Left to itself, a model reasons where it should measure — and reasoning produces confident-wrong answers, hallucinated columns, fabricated counts, and decisions from theory instead of code. The base rule: never state a load-bearing claim (one that makes the next decision wrong if it is wrong) without running the tool call that proves it, this session. Systems-work additions:
+Debugging and design review fail the same way: reasoning where you should have measured. Reasoning produces confident-wrong answers, hallucinated columns, fabricated counts, and decisions from theory instead of code. Invert the default.
+
+### Rule 1: Never state a load-bearing claim without measuring it first
+
+A load-bearing claim is a factual assertion that makes the next decision wrong if it is wrong — "column X holds Y", "there are N rows with property P", "phase A takes B seconds", "the bottleneck is C". Run the tool call that proves it, in this conversation. No exceptions for "obvious" cases; obvious is exactly where confident-wrong answers come from.
+
+### Rule 2: Claim types that always require a tool call
+
+- **Column semantics** → read the write path, then count the population.
+- **Function behavior** → read the function body this session.
+- **Scale and counts** — "most", "a few", "usually", "N out of M" → a query or grep count.
+- **Phase timing and bottlenecks** → timestamps, heartbeats, or added instrumentation. Never infer from code structure.
+- **Current state** → a live query, not a recalled number.
+- **Fix plans** — "1. X, 2. Y" → read every file the plan would modify before writing it. A fix plan is a load-bearing claim. When reading mid-stream shows the plan was wrong, say so ("pivot: X is moot because Y; new plan: Z") instead of narrating as if the new plan was always the plan.
+
+### Rule 3: Stop mid-sentence when theorizing
+
+If you start writing "the real bottleneck is", "this is almost certainly", "probably because" — stop. Delete it. Run a tool call. Write what it showed. Hedging ("likely") does not turn theory into evidence.
+
+### Rule 4: When asked "are you sure?"
+
+Produce a new measurement. Not a restatement, not a defense. If you cannot, say "I cannot verify this without running X — should I?"
+
+### Rule 5: Treat pushback as a hypothesis, not a directive
+
+When the user counters your analysis — "that sounds overcomplicated", "this is probably bigger than you think", "we just need to X" — verify the technical claim before acting on it. Trust the intent; check the claim. Reflexive agreement is the same failure as any other unmeasured load-bearing claim. When the framing is wrong, say what breaks and why, then ask.
+
+### Rule 6: Keep the list of times this went wrong
+
+Each project should carry its own short list of confidently-stated claims that turned out false: the claim, the truth, the missing tool call, and the trigger pattern. Read it before systems work. It is the cheapest calibration available.
+
+### Systems-work additions
 
 - **Every load-bearing claim in this protocol MUST come from a tool call this session.** Concept counts, caller counts, exception counts, column semantics, phase timing — all require a tool call, not recall.
 - **Parallelize with subagents.** When the protocol needs counts across modules, spawn an agent to gather them in parallel instead of serializing into reasoning.
