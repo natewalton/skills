@@ -1,0 +1,4 @@
+interface:
+  display_name: "Falsification-First Skill Design"
+  short_description: "Build skills with falsifiable, loophole-free gates"
+  default_prompt: "Use $falsification-first-skill-design with $skill-creator to create or revise this skill using falsifiable gates and an escape-hatch audit."
