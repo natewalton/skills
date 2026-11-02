@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec Design"
+  short_description: "Write evidence-backed, standalone-value specs"
+  default_prompt: "Use $spec-design to write or review a vertically sliced, evidence-backed spec that delivers standalone customer value."
