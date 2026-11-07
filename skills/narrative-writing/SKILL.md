@@ -43,10 +43,28 @@ reader already understands. Keep qualifications beside the claims they limit.
 ### Finish with an independent reader
 
 For a new piece or substantial rewrite, use a fresh agent as an editorial
-reader. Give it the author's request, source record, current corrections,
-complete draft and the literary-craft reference with its primary readings.
-Keep your plan and self-assessment out of that handoff. Ask for a read of the
-whole piece, not a rewrite or a list of preferred synonyms.
+reader with no inherited conversation history. Establish the intended audience
+and their likely knowledge using writing-style's audience guidance. Give the
+reader that audience hypothesis, the piece's purpose, the complete draft,
+context its audience will actually see, and the literary-craft reference with
+its primary readings. Keep private source material, drafting exchanges and your
+self-assessment out of this first handoff.
+For this first pass, the reader uses only that packet. Reading private source
+files and project briefing waits for the factual and intent check below.
+
+Have the reader record its first-read assessment before supplying the private
+brief. Ask where a reference, joke or connection requires knowledge this
+audience has not been given, and where explanations underestimate that audience.
+Require the passage and the missing or redundant premise. A delayed reveal
+works when the reader understands the question before learning the answer.
+Ordinary inference and deliberate mystery can remain; check that the reader
+can follow the situation, rather than demanding every fact upfront.
+
+After that assessment, supply the source record, author's instructions, voice
+samples and corrections for a separate factual and intent check. A source can
+verify a claim while revealing a premise the published piece still needs.
+Preserve the first-read findings when the sources explain such a gap. Ask for
+a read of the whole piece, not a rewrite or a list of preferred synonyms.
 
 The reader must assess the author's particular perspective, development through
 the body, voice, sentence movement and ending. Require passage-level reasons:
@@ -58,7 +76,9 @@ Accurate but inert prose requires revision. An entertaining invention does too.
 Use the critique to revise at the level of the defect: an undeveloped thought
 needs development, and an unrelated ending needs reselection or repositioning.
 Sentence polish alone cannot resolve either. Send the complete revised piece
-back for a read of the resulting whole. Finish after the reader finds the
+for a read of the resulting whole. After a reviewer has seen private sources,
+use a fresh reader for the revised piece's audience-only pass, then check its
+sources as above. Finish after the reader finds the
 piece's intended effect sustained through the ending and its claims supported.
 A relative improvement over the previous draft is insufficient. Resolve a
 reviewer's disputed factual or scope objection against the author's actual

@@ -11,6 +11,24 @@ composing. Accuracy and the author's intended meaning govern them all.
 
 ## Compose for this reader
 
+Establish who will read the piece, what they need from it, and what context
+they will actually encounter. Use the stated audience, destination, surrounding
+text and supplied examples. For an unstated audience, make a working hypothesis
+from those clues and keep it distinct from confirmed facts. A platform alone
+does not establish readers' expertise or their knowledge of the author's life.
+
+Calibrate both ways: assuming too much leaves readers lost; assuming too little
+buries the point in explanations they already know. Distinguish their likely
+domain knowledge, context supplied in the piece or shared thread, and facts
+available only in the private brief. Use the smallest cue that closes a gap.
+Keep familiar specialist language for a specialist audience.
+
+Ask a focused question when missing audience information leaves plausible
+interpretations requiring materially different content, terminology or detail.
+Ask for a missing fact essential to the story. First check the available context
+for answers. Resolve minor uncertainties with a reasonable working assumption
+or a brief contextual cue; routine writing should not require an intake interview.
+
 For an authored piece, address its audience in the author's voice. Select the
 material that makes the intended thought worth following, then write a complete
 passage before polishing its sentences. Keep analysis of what the writing is
@@ -23,10 +41,19 @@ extra jokes or labels such as "exciting." A dry observation can stay plain.
 
 ## Write for a reader who remembers
 
-The reader carries understanding from one sentence to the next. Begin from
-what is established and let the new information complete or change the thought.
+The reader carries understanding from what they have encountered, not from the
+writer's private conversation. For a reference or connection the reader needs,
+locate its basis in the preceding text, shared context or reasonable audience
+knowledge. Supply a missing premise before relying on it. Begin from what is
+established and let the new information complete or change the thought.
 Keep the main action in the main clause; give supporting material a supporting
 place in the grammar instead of a separate announcement.
+
+A delayed reveal needs a recognizable question. Establish the incident whose
+answer you withhold; save the answer for its intended place. Preserve suspense,
+ordinary inference and deliberate ambiguity where the reader can follow the
+situation. This is a comprehension check, not a demand for an explicit antecedent
+for every noun or an explanation after every joke.
 
 "I'm revisiting P2P using Iroh" lets the method complete the action. Splitting
 it into "That's why I'm revisiting P2P. I'm using Iroh" makes the reader stop
@@ -239,8 +266,10 @@ revision, then another check.** Send after every check passes.
    - **No:** Correct the claims and preserve the evidence limits.
 3. Are all requested parts and decision-changing qualifications present?
    - **No:** Add the missing parts or qualifications.
-4. Can this reader understand the terms, references, and next action?
-   - **No:** Explain the unclear terms or references and name the next action.
+4. Does the detail fit the established audience, with enough context to follow
+   the terms, references and next action, and without explaining what they know?
+   - **No:** Add the missing cue or premise, cut needless explanation, or ask
+     the focused question needed to resolve a material audience uncertainty.
 5. Does the answer fit the requested length and form, with every included
    detail serving meaning, usefulness, or needed tone?
    - **No:** Adjust the length or form and cut the padding.
