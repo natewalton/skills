@@ -1,0 +1,6 @@
+interface:
+  display_name: "Narrative Writing"
+  short_description: "Write connected personal nonfiction with a distinct voice"
+  default_prompt: "Use $narrative-writing to revise this narrative while preserving my meaning and voice."
+policy:
+  allow_implicit_invocation: true
